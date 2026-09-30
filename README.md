@@ -34,6 +34,8 @@ Python, FastAPI, OpenAI API, ChromaDB, pypdf, HTML/CSS/JavaScript
 4. Start the API: `uvicorn api:app --reload`
 5. Open `frontend/index.html` (for example with VS Code Live Server) and use the chat button.
 
+website kini juga tersedia di http://127.0.0.1:8000
+
 ## API
 
 `POST /chat`

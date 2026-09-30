@@ -2,7 +2,7 @@
 (() => {
   // Saat uji di laptop, server berjalan di alamat ini.
   // Setelah deploy, ganti dengan alamat server online.
-  const API_URL = "http://127.0.0.1:8000/chat";
+  const API_URL = location.port === "5500" ? "http://127.0.0.1:8000/chat" : "/chat";
   const MAKS_RIWAYAT = 12; // jumlah pesan terakhir yang dikirim ke server
   const PESAN_AWAL = "Halo! Ada yang bisa saya bantu?";
 
@@ -73,6 +73,12 @@
           riwayat: riwayat.slice(-MAKS_RIWAYAT),
         }),
       });
+            if (respons.status === 429) {
+        indikator.classList.remove("typing");
+        indikator.textContent =
+          "Terlalu banyak pertanyaan saat ini. Silakan coba lagi beberapa saat lagi.";
+        return;
+      }
       if (!respons.ok) throw new Error("Status " + respons.status);
       const data = await respons.json();
 
