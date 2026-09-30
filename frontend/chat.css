@@ -1,0 +1,128 @@
+/* Widget chat Jiwanta. Memakai warna dari style.css, dengan warna cadangan. */
+.jw-chat-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color, #3b141c);
+    color: #fff;
+    font-size: 26px;
+    z-index: 90;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.jw-chat-btn:hover {
+    transform: scale(1.08);
+}
+
+.jw-chat-panel {
+    position: fixed;
+    right: 24px;
+    bottom: 96px;
+    width: 360px;
+    max-width: calc(100vw - 32px);
+    height: 520px;
+    max-height: calc(100vh - 120px);
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    z-index: 90;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.jw-chat-panel.open {
+    display: flex;
+}
+
+.jw-chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: var(--primary-color, #3b141c);
+    color: #fff;
+    font-weight: 600;
+}
+
+.jw-chat-close {
+    color: #fff;
+    font-size: 18px;
+}
+
+.jw-chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--light-pink-color, #faf4f5);
+}
+
+.jw-msg {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.jw-msg.bot {
+    align-self: flex-start;
+    background: #fff;
+    color: var(--dark-color, #252525);
+    border-bottom-left-radius: 4px;
+}
+
+.jw-msg.user {
+    align-self: flex-end;
+    background: var(--primary-color, #3b141c);
+    color: #fff;
+    border-bottom-right-radius: 4px;
+}
+
+.jw-msg.typing {
+    color: #888;
+    font-style: italic;
+}
+
+.jw-chat-form {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    background: #fff;
+}
+
+.jw-chat-input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid var(--medium-gray-color, #ccc);
+    border-radius: 20px;
+    font-size: 0.92rem;
+    outline: none;
+}
+
+.jw-chat-input:focus {
+    border-color: var(--secondary-color, #f3961c);
+}
+
+.jw-chat-send {
+    padding: 0 16px;
+    border-radius: 20px;
+    background: var(--secondary-color, #f3961c);
+    color: #fff;
+    font-weight: 600;
+}
+
+.jw-chat-send:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

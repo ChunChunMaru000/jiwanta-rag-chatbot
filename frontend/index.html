@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiwanta Cafe &</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕ Jiwanta Cafe & Space</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item"><a href="#" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Tentang Kami</a></li>
+                <li class="nav-item"><a href="#shop" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Ulasan</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Galeri</a></li>
+            </ul>
+            <div class="navbar-right">
+                <button id="menu-open-button" class="fas fa-bars"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Cafe Shop</h2>
+                    <h3 class="subtitle">Chill Spot, Workbit, adn Snack Talk</h3>
+                    <p class="description">Hadir sebagai tempat untuk menikmati momen sederhana — dengan suasana nyaman yang selalu terasa menyenangkan</p>
+                    <div class="hero-stats">
+                        <div class="stat"><strong>500+</strong><span>Pelanggan Puas</span></div>
+                        <div class="stat-divider"></div>
+                        <div class="stat"><strong>20+</strong><span>Pilihan Menu</span></div>
+                        <div class="stat-divider"></div>
+                        <div class="stat"><strong>4.9★</strong><span>Rating</span></div>
+                    </div>
+                    <div class="buttons">
+                        <a href="#shop" class="button order-now">Lihat Menu <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#about" class="button contact-us">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/logo.png" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="text">Di Coffee House, kami bangga menghadirkan pengalaman kopi yang luar biasa langsung ke depan pintu Anda. Biji kopi kami berasal dari perkebunan terbaik di dunia, dipanggang dengan sempurna, dan diseduh oleh barista yang penuh passion.</p>
+                    <div class="about-features">
+                        <div class="feature"><i class="fa-solid fa-leaf"></i><span>100% Biji Kopi Organik</span></div>
+                        <div class="feature"><i class="fa-solid fa-truck-fast"></i><span>Pengiriman Cepat</span></div>
+                        <div class="feature"><i class="fa-solid fa-star"></i><span>Kualitas Premium</span></div>
+                    </div>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop / Menu Section -->
+        <section class="shop-section" id="shop">
+            <h2 class="section-title">Daftar Menu</h2>
+            <div class="section-content">
+                <!-- Filter Tabs -->
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">Semua</button>
+                    <button class="filter-tab" data-filter="platter">🍽️ Platter</button>
+                    <button class="filter-tab" data-filter="softdrink">🍹 Soft Drink</button>
+                    <button class="filter-tab" data-filter="coffee">☕ Coffee</button>
+                    <button class="filter-tab" data-filter="milk">🥛 Milk Based</button>
+                    <button class="filter-tab" data-filter="food">🍔 Makanan</button>
+                    <button class="filter-tab" data-filter="addon">🥚 Add On</button>
+                    <button class="filter-tab" data-filter="snack">🍟 Snack</button>
+                </div>
+
+                <ul class="product-list">
+                    <!-- Platter -->
+                    <li class="product-item" data-category="platter">
+                        <img src="jiwanta menu images/Platter/Party on Plate.png" alt="Platter" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Party on Plate</h3>
+                            <p class="product-desc">6 jenis snack jadi satu dalam plattermu.
+                            <br>(onion ring, enoqi renyah, tahu walik sosis goreng, kentang goreng,)
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp52.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="platter">
+                        <img src="jiwanta menu images/Platter/Carzy Crunch Mix.png" alt="Platter" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Crazy Crunch Mix</h3>
+                            <p class="product-desc">2 jenis cruncy snack <br>(onion ring, & enoqi crispy)
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp30.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="platter">
+                        <img src="jiwanta menu images/Platter/Jiwanta Combo Feast.png" alt="Platter" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Jiwanta Combo Feast</h3>
+                            <p class="product-desc"> Cilok legend, tahu bakso, crispy enoqi
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp25.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="platter">
+                        <img src="jiwanta menu images/Platter/Snack Attack Platter.png" alt="Platter" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Snack Attack Platter</h3>
+                            <p class="product-desc"> Golden wedges, sosis, cassava bliss, tahu bakso
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp30.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="platter">
+                        <img src="jiwanta menu images/Platter/Happy Hour Paltter.png" alt="Platter" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Happy Hour Platter</h3>
+                            <p class="product-desc"> Golden wedges, sosis, cassava bliss, onion ring, chicken nugget
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp45.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="platter">
+                        <img src="jiwanta menu images/Platter/Special Party on Plate.png" alt="Platter" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Special Party on Plate</h3>
+                            <p class="product-desc"> onion ring, enoqi renyah, tahu bakso, sosis goreng, kentang goreng, otak-otak
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp52.000</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- soft drink -->
+                    <li class="product-item" data-category="softdrink">
+                        <div class="product-badge">Signature</div>
+                        <img src="jiwanta menu images/Soft Drink/Herbal Bliss.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Herbal Bliss</h3>
+                            <p class="product-desc">campuran jahe, lemon dan madu</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp28.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="softdrink">
+                        <div class="product-badge">Signature</div>
+                        <img src="jiwanta menu images/Soft Drink/Tropical Soul.png" alt="Es Matcha Latte" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Tropical Soul</h3>
+                            <p class="product-desc">kombinasi dari mangga, kelapa, mint</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp30.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="softdrink">
+                        <img src="jiwanta menu images/Soft Drink/Sparkling Lemon.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Sparkling Lemon</h3>
+                            <p class="product-desc">minuman segar dengan perpaduan  lemon, dan sensasi sparkling yang menyegarkan</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="softdrink">
+                        <img src="jiwanta menu images/Soft Drink/lecy tea original based.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Lecy Tea Original Based</h3>
+                            <p class="product-desc">teh segar dengan aroma dan rasa manis khas leci yang ringan dan menyegarkan</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="softdrink">
+                        <img src="jiwanta menu images/Soft Drink/mineral water.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Mineral Water</h3>
+                            <p class="product-desc">air mineral murni yang menyegarkan</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp10.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="softdrink">
+                        <div class="product-badge">Signature</div>
+                        <img src="jiwanta menu images/Soft Drink/jiwanta sunset.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Jiwanta Sunset</h3>
+                            <p class="product-desc">mocktail segar jeruk dan campuran soda</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp10.000</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- coffee -->
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/butterscoth.png" alt="Kopi Hitam" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Butterscoth Latte</h3>
+                            <p class="product-desc">perpaduan kopi dengan manis karamel butterscotch yang lembut dan creamy</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/vanilla latte.png" alt="Cappuccino" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Vanilla Latte</h3>
+                            <p class="product-desc">latte halus dengan sentuhan manis dan aroma vanilla yang menenangkan</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/jiwanta java latte.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Jiwanta Java Latte</h3>
+                            <p class="product-desc">latte klasik dengan cita rasa kopi yang lebih bold dan seimbang</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/golden salt latte.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Golden Salt Latte</h3>
+                            <p class="product-desc">kombinasi unik kopi creamy dengan sentuhan manis dan sedikit asin yang khas</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/caoffee latte.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Coffee Latte</h3>
+                            <p class="product-desc">perpaduan espresso dan susu yang lembut, ringan, dan creamy</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/Americano.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Americano</h3>
+                            <p class="product-desc">kopi hitam dengan rasa kuat, berat, dan sedikit pahit</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="coffee">
+                        <img src="jiwanta menu images/coffee/Klasik kopi.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Klasik Kopi</h3>
+                            <p class="product-desc">sajian kopi tradisional dengan rasa autentik dan khas</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Milk -->
+                    <li class="product-item" data-category="milk">
+                        <img src="jiwanta menu images/milk based/red velvet premium scrambel.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Red Velvet Premium Scrambel</h3>
+                            <p class="product-desc">manis creamy dengan sentuhan cokelat ringan khas red velvet dan tekstur lembut dari scramble</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp23.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="milk">
+                        <img src="jiwanta menu images/milk based/Matcha premium.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Matcha Premium</h3>
+                            <p class="product-desc">matcha berkualitas dengan rasa khas yang lembut, sedikit pahit, dan creamy</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp25.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="milk">
+                        <img src="jiwanta menu images/milk based/Taro fresh.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Taro Fresh</h3>
+                            <p class="product-desc">minuman taro dengan rasa manis lembut dan aroma yang khas</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp23.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="milk">
+                        <img src="jiwanta menu images/milk based/chocolate premium with scrambel choco.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Chocolate Premium with Scrambel Choco</h3>
+                            <p class="product-desc">cokelat creamy dengan tambahan potongan cokelat yang manis dan lumer</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp23.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="milk">
+                        <img src="jiwanta menu images/milk based/dark choco premium.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Dark Choco Premium</h3>
+                            <p class="product-desc">cokelat pekat dengan rasa lebih intens dan sedikit pahit yang elegan</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp23.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="milk">
+                        <img src="jiwanta menu images/milk based/green tea.png" alt="Es Kopi Susu" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Green Tea</h3>
+                            <p class="product-desc">perpaduan teh hijau dan susu yang lembut, ringan, dan creamy</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp23.000</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Makanan -->
+                    <li class="product-item" data-category="food">
+                        <div class="product-badge">Signature</div>
+                        <img src="jiwanta menu images/makanan/nasi bakar ayam suwir kemangi.png" alt="Nasi Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Nasi Bakar Ayam Suwir Kemangi</h3>
+                            <p class="product-desc">nasi gurih dengan isian ayam suwir yang wangi khas daun kemangi disertai aroma smoky</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp25.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="food">
+                        <div class="product-badge">Signature</div>
+                        <img src="jiwanta menu images/makanan/mashed potato with chicken sauce.png" alt="Mie Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Mashed Potato with Chicken Sauce</h3>
+                            <p class="product-desc">kentang lembut dengan ayam lada hitam</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp25.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="food">
+                        <img src="jiwanta menu images/makanan/nasi goreng ayam suwir kemangi.png" alt="Mie Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Nasi Goreng Ayam Suwir Kemangi</h3>
+                            <p class="product-desc">nasi goreng gurih dengan suwiran ayam lembut dan aroma segar daun kemangi</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="food">
+                        <img src="jiwanta menu images/makanan/ayam lada hitam & borkoli segar.png" alt="Mie Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Ayam Lada Hitam & Brokoli Segar</h3>
+                            <p class="product-desc">ayam lada hitam pedas gurih disajikan dengan nasi hangat dan brokoli segar</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp30.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="food">
+                        <img src="jiwanta menu images/makanan/mie goreng with vegetables.png" alt="Mie Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Mie Goreng with Vegetables</h3>
+                            <p class="product-desc">mie goreng dengan tambahan sayuran yang sehat</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="food">
+                        <img src="jiwanta menu images/makanan/mie rebus with vegetables.png"Mie Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Mie Rebus with Vegetbales</h3>
+                            <p class="product-desc">mie kari rebus dengan tambahan sayuran yang sehat</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Add On -->
+                    <li class="product-item" data-category="addon">
+                        <img src="jiwanta menu images/add on/telur.png" alt="Telur" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Telur</h3>
+                            <p class="product-desc">Tambahan telur goreng atau rebus sesuai selera</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp3.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="addon">
+                        <img src="jiwanta menu images/add on/sayuran.png" alt="Sayur" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Sayur</h3>
+                            <p class="product-desc">Tambahan sayur segar sebagai pelengkap makanan</p>
+                            <div class="product-footer">
+                                <span class="product-price">free</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Snack -->
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/Onion crown.png"Kentang Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Onion Crown</h3>
+                            <p class="product-desc">bawang bombay goreng renyah diluar, lembut didalam, gurih dan sedikit manis</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp25.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/fries booster.png" alt="Sosis" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Fries MoodBooster</h3>
+                            <p class="product-desc">kentang goreng renyah dengan rasa gurih yang bikin nagih</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/crispy enoqi.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Crispy Enoqi</h3>
+                            <p class="product-desc">jamur enoqi krispi dnegan tekstur ringan dan gurih</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp25.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/chicken nugget.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Chicken Nugget</h3>
+                            <p class="product-desc">nugget ayam empuk dengan lapisan renyah dan rasa gurih</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp20.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/golden wedges.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Golden Wedges</h3>
+                            <p class="product-desc">kentang wedges tebal, lembut didalam dan renyah diluar</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/Sosis.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Sosis</h3>
+                            <p class="product-desc">sosis juicy dengan rasa gurih dan sedikit smoky</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/cassava bliss.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Cassava Bliss</h3>
+                            <p class="product-desc">singkong goreng empuk dengan rasa gurih dan sedikit manis</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/sweet tangy corn.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Sweet & Tangy Corn</h3>
+                            <p class="product-desc">jagung manis dengan perpaduan rasa manis dan sedikit asam segar</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/cilok.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Cilok Legend</h3>
+                            <p class="product-desc">kenyal, gurih, dengan cita rasa sederhana khas</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp21.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/royal dimsum.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Royal Dimsum</h3>
+                            <p class="product-desc">dimsum lembut dan juicy dengan isian gurih</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp21.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/otak soul.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Otak Soul</h3>
+                            <p class="product-desc">fishcake berbumbu gurih</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp21.000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product-item" data-category="snack">
+                        <img src="jiwanta menu images/snack/tahu bakso.png" alt="Tahu Goreng" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-name">Tahu Bakso</h3>
+                            <p class="product-desc">tahu lembut dengan isian bakso gurih dan padat</p>
+                            <div class="product-footer">
+                                <span class="product-price">Rp22.000</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Ulasan Pelanggan</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonial-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-1.jpg" alt="user" class="user-image">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3 class="name">Sarah M.</h3>
+                                <i class="feedback">Cold brew-nya benar-benar luar biasa. Diantar kurang dari 30 menit, pasti akan pesan lagi!</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-2.jpg" alt="user" class="user-image">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3 class="name">James K.</h3>
+                                <i class="feedback">Cappucino terbaik yang pernah saya coba. Pesan online sangat mudah dan kemasannya menjaga kopi tetap hangat dengan sempurna.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-3.jpg" alt="user" class="user-image">
+                                <div class="testimonial-stars">★★★★☆</div>
+                                <h3 class="name">Priya S.</h3>
+                                <i class="feedback">Combo tiramisu benar-benar sepadan dengan harganya. Segar, lezat, dan pengirimannya cepat!</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-4.jpg" alt="user" class="user-image">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3 class="name">Daniel R.</h3>
+                                <i class="feedback">Saya memesan dari sini setiap pagi. Racikan espresso-nya persis seperti yang saya suka — kuat dan halus.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-5.jpg" alt="user" class="user-image">
+                                <div class="testimonial-stars">★★★★★</div>
+                                <h3 class="name">Emma T.</h3>
+                                <i class="feedback">Kualitas dan pelayanan luar biasa. Iced matcha latte menu favorit saya!</i>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Galeri</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item"><img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2024 Coffee House · All rights reserved</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Kebijakan Privasi</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="policy-link">Kebijakan Pengembalian</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
